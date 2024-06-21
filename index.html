@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="weather-container">
+            <div class="Card">
+                <div class="CardInner">
+                    <div class="container">
+                        <button class="Icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#657789" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-search">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </button>
+                        <div class="InputContainer">
+                            <input id='loc' placeholder="Enter a Location..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="temp">
+                <div>
+                    <img id="weticon" src="" alt="">
+                </div>
+                <div>
+                    <p id="temperature"></p>
+                    <p id="cityname"></p>
+                </div>
+            </div>
+            <div class="basic-inf">
+                <img src="assets/feelslike.png" alt="">
+                <div>
+                    <p id="feels"></p>
+                    <p>feels like</p>
+                </div>
+                <img src="assets/humidity.png" alt="">
+                <div>
+                    <p id="humid"></p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div id="minmax">
+                <img src="assets/wind.png" alt="">
+                <div>
+                    <p id="windspeed"></p>
+                    <p>wind</p>
+                </div>
+                <div>
+                    <p id="precipitation"></p>
+                    <p>precipitation</p>
+                </div>
+            </div>
+            <div id="wetdes">
+                <p style="font-weight: bold;">Weather Description</p>
+                <p id="wetdis"></p>
+            </div>
+        </div> 
+    </div>
+    <footer>
+        <p class="iconsHelp">For Icons Used in This website: </p>
+        <a href="https://storyset.com/app" class="iconsHelp" target="_blank"> storyset.com</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
