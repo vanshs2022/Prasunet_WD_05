@@ -8,7 +8,7 @@ const precipitationElement = document.getElementById('precipitation');
 const weatherDescriptionElement = document.getElementById('wetdis');
 
 async function fetchWeatherData(city) {
-  const apiKey = '00db6ceb032557737bcc6a8ab310c812'; 
+  const apiKey = API_KEY; 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
